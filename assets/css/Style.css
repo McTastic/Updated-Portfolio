@@ -1,0 +1,498 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #bcc6cc, #eee, #bcc6cc);
+    padding: auto;
+    font-family: "poppins", "sans-serif";
+    flex-wrap: wrap;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background: #000000;
+    z-index: 99;
+    width: 100%;
+    height: 6rem;
+    padding: 20px;
+}
+
+nav {
+    font-size: 20px;
+    color: white;
+    align-content: center;
+    align-items: center;
+}
+
+main {
+    text-align: center;
+    padding-bottom: 6rem;
+}
+
+section {
+    align-items: center;
+}
+
+section h2 {
+    margin-right: 2rem;
+    font-size: 5rem;
+    text-shadow: 4px 8px 10px rgb(65, 64, 64);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    order: 99;
+    height: 6rem;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.name {
+    display: flex;
+    width: 30%;
+    font-size: 50px;
+    color: white;
+}
+
+header h1::selection,
+.hero h1::selection,
+.hero p::selection {
+    display: none;
+}
+
+.hero {
+    padding: 8rem;
+    height: 100vh;
+    margin: 2rem 0 4rem 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(https://images.unsplash.com/photo-1500417148159-68083bd7333a) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.hero h1 {
+    color: white;
+    font-size: 10rem;
+    width: 25%;
+}
+
+.hero p {
+    color: white;
+    font-size: 3rem;
+}
+
+.nav-right {
+    font-size: 26px;
+    width: 50rem;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+}
+
+.nav-btn {
+    color: black;
+    position: relative;
+    right: -10rem;
+    margin: 0.25rem;
+    padding: 1.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.25s;
+    background-size: 200% auto;
+    border-radius: 10px;
+    background-image: linear-gradient(
+        45deg,
+        rgba(59, 173, 227, 1) 0%,
+        rgba(87, 111, 230, 1) 25%,
+        rgba(152, 68, 183, 1) 51%,
+        rgba(255, 53, 127, 1) 100%
+    );
+}
+
+.nav-btn:hover {
+    background-position: right center;
+}
+
+.nav-right li {
+    display: inline;
+}
+
+.nav-right a {
+    justify-content: space-between;
+}
+
+.about {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.about h2 {
+    position: relative;
+    left: -2rem;
+    width: 23.85rem;
+}
+
+.about p {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.about-text {
+    position: relative;
+    left: -2.4rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    padding-left: 5rem;
+    padding-right: 10rem;
+    width: 65vw;
+    border-left: solid #8fd3f4;
+    border-width: 0.3rem;
+}
+
+.work {
+    display: flex;
+    height: 65rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.work-tiles {
+    /* border-left: solid #8fd3f4; */
+    position: relative;
+    right: -2rem;
+    padding-bottom: 49.5rem;
+    height: 45rem;
+    border-width: 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.work h2 {
+    position: relative;
+    left: -2rem;
+}
+
+.banner {
+    position: relative;
+    bottom: -1.5rem;
+    left: -2.2rem;
+    height: 4rem;
+    width: 35%;
+    background: linear-gradient(
+        45deg,
+        rgba(59, 173, 227, 1) 0%,
+        rgba(87, 111, 230, 1) 25%,
+        rgba(152, 68, 183, 1) 51%,
+        rgba(255, 53, 127, 1) 100%
+    );
+    transition: 0.25s;
+    background-size: 150% auto;
+}
+
+.banner:hover {
+    background-position: right center;
+}
+
+.banner p {
+    font-size: 14px;
+    margin: auto;
+}
+
+.big-tile {
+    display: flex;
+    position: relative;
+    bottom: 0.25rem;
+    height: 30rem;
+    order: 1;
+    width: 81.5%;
+    border-style: solid;
+    border-width: 0.25rem;
+    border-image: linear-gradient(
+            45deg,
+            rgba(59, 173, 227, 1) 0%,
+            rgba(87, 111, 230, 1) 25%,
+            rgba(152, 68, 183, 1) 51%,
+            rgba(255, 53, 127, 1) 100%
+        )
+        1;
+    background-image: url(../images/travel-guide.png);
+    background-size: cover;
+}
+
+.big-tile .banner {
+    position: relative;
+    padding: 0.5rem;
+    bottom: -22rem;
+    left: 0;
+    width: 25%;
+}
+
+.regular-tiles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    order: 2;
+    justify-content: center;
+}
+
+.tile {
+    display: flex;
+    margin: 0.25rem 0.5rem 0.25rem 0.5rem;
+    width: 40%;
+    padding: 2rem;
+    border: solid red;
+}
+
+.contact {
+    display: flex;
+    height: 10rem;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+.contact h2 {
+    position: relative;
+    left: -19rem;
+    width: 30rem;
+}
+
+.contact ul {
+    position: relative;
+    display: flex;
+    width: 50rem;
+    left: -17.75rem;
+    padding: 2rem 0 2rem 2rem;
+    border-left: solid #8fd3f4;
+    border-width: 0.3rem;
+}
+
+.contact li {
+    font-size: 2rem;
+    margin: 0 4rem 0 4rem;
+    border-bottom: solid black;
+}
+
+.contact a {
+    color: black;
+}
+
+#about-me {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
+
+#tile1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url(../images/weather-app.png);
+        background-size: cover;
+    border-image: linear-gradient(
+            45deg,
+            rgba(59, 173, 227, 1) 0%,
+            rgba(87, 111, 230, 1) 25%,
+            rgba(152, 68, 183, 1) 51%,
+            rgba(255, 53, 127, 1) 100%
+        )
+        1;
+    border-width: 0.25rem;
+}
+
+#tile2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url(../images/coding-quiz.png);
+    background-size: cover;
+    border-image: linear-gradient(
+            45deg,
+            rgba(59, 173, 227, 1) 0%,
+            rgba(87, 111, 230, 1) 25%,
+            rgba(152, 68, 183, 1) 51%,
+            rgba(255, 53, 127, 1) 100%
+        )
+        1;
+    border-width: 0.25rem;
+}
+
+#tile3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url(../images/Day_Planner_screenshot.png);
+    background-size: cover;
+    border-image: linear-gradient(
+            45deg,
+            rgba(59, 173, 227, 1) 0%,
+            rgba(87, 111, 230, 1) 25%,
+            rgba(152, 68, 183, 1) 51%,
+            rgba(255, 53, 127, 1) 100%
+        )
+        1;
+    border-width: 0.25rem;
+}
+
+#tile4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url(../images/password-generator.png);
+    background-size: cover;
+    border-image: linear-gradient(
+            45deg,
+            rgba(59, 173, 227, 0.75) 0%,
+            rgba(87, 111, 230, 0.75) 25%,
+            rgba(152, 68, 183, 0.75) 51%,
+            rgba(255, 53, 127, 0.75) 100%
+        )
+        1;
+    border-width: 0.25rem;
+}
+
+.my-pic img {
+    box-shadow: 12px 12px 2px 1px rgba(79, 79, 102, 0.336);
+    opacity: 75%;
+    height: auto;
+    max-width: 15rem;
+}
+
+.my-pic {
+    position: relative;
+    top: 5rem;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 15rem;
+    }
+    footer {
+        margin-top: 25rem;
+    }
+
+    nav {
+        width: 35%;
+        height: 20rem;
+        display: flex;
+        width: 45%;
+        height: 10rem;
+    }
+
+    .name {
+        font-size: 4rem;
+    }
+
+    .nav-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 12rem;
+        width: 35rem;
+    }
+
+    .nav-btn {
+        display: inline-block;
+        width: 100%;
+        height: 5rem;
+        position: relative;
+        left: 4rem;
+    }
+
+    .about h2 {
+        position: relative;
+        left: -9rem;
+    }
+
+    .about-text {
+        position: relative;
+        left: -9rem;
+        font-size: 300%;
+        font-weight: 150;
+        width: 99%;
+    }
+
+    .hero {
+        height: 80rem;
+    }
+
+    .hero h1,
+    .hero p {
+        position: relative;
+        bottom: -10rem;
+    }
+
+    .work {
+        position: relative;
+        top: 10rem;
+    }
+
+    .work h2 {
+        position: relative;
+        padding: 0 10rem 2rem 10rem;
+        bottom: 2rem;
+        left: -2rem;
+        border-bottom: solid #8fd3f4;
+    }
+
+    .work-tiles {
+        border-left: none;
+    }
+
+    .contact ul,
+    .contact li {
+        display: unset;
+        border-bottom: none;
+        position: relative;
+        bottom: -20rem;
+        left: -1rem;
+    }
+
+    .contact ul {
+        left: -15rem;
+    }
+
+    .contact li {
+        top: -1rem;
+        font-size: 3rem;
+    }
+
+    .contact ul {
+        border-top: solid #8fd3f4;
+        border-left: none;
+    }
+
+    .contact h2 {
+        position: relative;
+        left: 25rem;
+        bottom: -6rem;
+        text-align: center;
+        padding: 0;
+        margin: auto;
+    }
+
+    .my-pic img {
+        position: relative;
+        bottom: -20rem;
+    }
+}
